@@ -34,3 +34,10 @@ read car1 car2 car3
 echo Your first car was: $car1
 echo Your second car was: $car2
 echo Your third car was: $car3
+
+#Read from file
+input="sample.txt"
+while IFS= read -r line
+do
+  echo "$line"
+done < "$input"
